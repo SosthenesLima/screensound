@@ -1,6 +1,10 @@
 package br.com.lima.screensound.principal;
 
+import java.util.Scanner;
+
 public class Principal {
+
+    private Scanner leitura = new Scanner(System.in);
 
     public void exibeMenu() {
         var opcao = -1;
@@ -45,5 +49,21 @@ public class Principal {
                     System.out.println("Opção inválida!");
             }
         }
+    }
+
+    private void pesquisarDadosDoArtista() {
+    }
+
+    private void buscarMusicasPorArtista() {
+    }
+
+    private void listarMusicas() {
+    }
+
+    private void cadastrarMusicas() {
+    }
+
+    private void cadastrarArtistas() {
+        
     }
 }
