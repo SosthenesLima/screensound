@@ -6,17 +6,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "artista")
+@Table(name = "artistas")
 public class Artista {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Long id;
+    private Long id;
+
     @Column(unique = true)
+    private String nome;
+
     @Enumerated(EnumType.STRING)
-    public String nome;
     private TipoArtista tipo;
 
+    @OneToMany(mappedBy = "artista")
     private List<Musica> musicas = new ArrayList<>();
 
     public Long getId() {
