@@ -1,5 +1,8 @@
 package br.com.lima.screensound.principal;
 
+import br.com.lima.screensound.model.Artista;
+import br.com.lima.screensound.model.TipoArtista;
+
 import java.util.Scanner;
 
 public class Principal {
@@ -66,9 +69,10 @@ public class Principal {
     private void cadastrarArtistas() {
         System.out.println("Informe o nome desse Artista: ");
         var nome = leitura.nextLine();
-        System.out.println("Informe o tipo desse artista: (Solo, Dupla ou Banda)");
-        var tipo = leitura.nextInt();
-
+        System.out.println("Informe o tipo desse artista: (solo, dupla ou banda)");
+        var tipo = leitura.nextLine();
+        TipoArtista tipoArtista = TipoArtista.valueOf(tipo.toUpperCase());
+        Artista artista = new Artista(nome, tipoArtista);
     }
 
 }
