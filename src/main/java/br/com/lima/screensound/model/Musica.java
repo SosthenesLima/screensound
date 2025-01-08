@@ -49,7 +49,7 @@ public class Musica {
     public String toString() {
         return
                 "Música='" + titulo + '\'' +
-                ", artista=" + artista;
+                ", artista=" + artista.getNome();
     }
 }
 
