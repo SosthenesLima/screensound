@@ -73,6 +73,7 @@ public class Principal {
         var tipo = leitura.nextLine();
         TipoArtista tipoArtista = TipoArtista.valueOf(tipo.toUpperCase());
         Artista artista = new Artista(nome, tipoArtista);
+        repositorio.save(artista);
     }
 
 }
