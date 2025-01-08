@@ -64,6 +64,11 @@ public class Principal {
     }
 
     private void cadastrarArtistas() {
-        
+        System.out.println("Informe o nome desse Artista: ");
+        var nome = leitura.nextLine();
+        System.out.println("Informe o tipo desse artista: (Solo, Dupla ou Banda)");
+        var tipo = leitura.nextInt();
+
     }
+
 }
