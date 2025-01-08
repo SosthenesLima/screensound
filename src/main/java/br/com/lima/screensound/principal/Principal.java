@@ -82,6 +82,7 @@ public class Principal {
             System.out.println("Informe o título da Música: ");
             var nomeMusica = leitura.nextLine();
             Musica musica = new Musica(nomeMusica);
+            artista.get().getMusicas().add(musica);
             musica.setArtista(artista.get());
             repositorio.save(artista.get());
         } else {
