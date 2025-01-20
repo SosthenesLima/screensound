@@ -1,3 +1,9 @@
+/*
+
+  By Sósthenes Oliveira Lima
+
+ */
+
 package br.com.lima.screensound.model;
 
 import jakarta.persistence.*;

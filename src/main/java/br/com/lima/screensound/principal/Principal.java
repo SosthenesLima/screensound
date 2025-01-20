@@ -4,6 +4,7 @@ import br.com.lima.screensound.model.Artista;
 import br.com.lima.screensound.model.Musica;
 import br.com.lima.screensound.model.TipoArtista;
 import br.com.lima.screensound.repository.ArtistaRepository;
+import br.com.lima.screensound.service.ConsultaChaGPT;
 
 import java.util.List;
 import java.util.Optional;
@@ -64,6 +65,10 @@ public class Principal {
     }
 
     private void pesquisarDadosDoArtista() {
+        System.out.println("Pesquisar dados sobre qual artista?");
+        var nome = leitura.nextLine();
+        var resposta = ConsultaChaGPT.obterInformacao(nome);
+        System.out.println(resposta.trim());
     }
 
     private void buscarMusicasPorArtista() {
