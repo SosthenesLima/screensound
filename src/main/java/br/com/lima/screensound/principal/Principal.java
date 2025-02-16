@@ -1,3 +1,8 @@
+/*
+  By Sósthenes lima
+
+ */
+
 package br.com.lima.screensound.principal;
 
 import br.com.lima.screensound.model.Artista;
