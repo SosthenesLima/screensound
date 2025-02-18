@@ -1,3 +1,8 @@
+/*
+  By Sósthenes Oliveira Lima
+
+ */
+
 package br.com.lima.screensound.service;
 
 import com.theokanning.openai.completion.CompletionRequest;
