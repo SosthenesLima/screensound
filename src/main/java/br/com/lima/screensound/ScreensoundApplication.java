@@ -1,3 +1,7 @@
+/*
+  By Sósthenes Oliveira Lima
+ */
+
 package br.com.lima.screensound;
 
 import br.com.lima.screensound.principal.Principal;
